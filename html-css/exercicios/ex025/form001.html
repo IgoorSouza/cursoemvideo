@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meu primeiro formulário</h1>
+
+  <form action="cadastro.php" method="POST" autocomplete="off">
+    <!--Método padrão do form: GET (mostra os dados na URL)-->
+    <!--Usar GET quando os dados não forem sensíveis (nome, peso, etc)-->
+    <!--Limite de capacidade do GET: 3000 bytes (+- 3000 letras)-->
+    <!--GET não suporta imagens e arquivos-->
+
+    <!--POST: não mostra os dados na URL-->
+    <!--Usar POST quando os dados forem sensíveis (senha, endereço, etc)-->
+    <!--POST suporta mais que 3000 bytes-->
+    <!--POST suporta envio de arquivos-->
+    
+    <p>
+      <label for="inome">Nome:</label> 
+      <input type="text" name="nome" id="inome">
+    </p>
+
+    <p>
+      <label for="isobrenome">Sobrenome:</label> 
+      <input type="text" name="sobrenome" id="isobrenome">
+    </p>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

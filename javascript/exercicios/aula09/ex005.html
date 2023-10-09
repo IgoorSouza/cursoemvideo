@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos com DOM</title>
+  <style>
+    body {
+      background-color: rgb(68, 125, 199);
+      color: white;
+      font: normal 18pt Arial;
+    }
+  </style>
+</head>
+<body>
+  <h1>Iniciando estudos DOM</h1>
+
+  <p>Aqui vai o resultado.</p>
+
+  <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+
+  <div class="msg">Clique em mim!</div>
+
+  <script>
+    var corpo = document.body
+    var p1 = document.getElementsByTagName('p')[1]
+
+    //var d = document.getElementById('msg')
+    //d.style.background = 'green'
+    //d.innerText = 'Estou aguardando...'
+    //document.getElementById('msg').innerText = 'Olá!'
+
+    //var d = document.getElementsByName('msg')[0]
+    //d.innerText = 'Olá!'
+
+    var d = document.querySelector('div.msg')
+    d.style.background = 'blue'
+
+    /*
+    Selecionando elementos
+
+    por Marca: getElementsByTagName(). Seleciona todos os objetos com a tag especificada no comando;
+
+    por ID: getElementById(). Seleciona todos os objetos com o Id especificado no comando;
+
+    por Nome: getElementsByName()
+
+    por Classe: getElementsByClassName()
+
+    por Seletor: querySelector() ou querySelectorAll()
+
+    OBS.: quando se utiliza getElementsByTagName() ou getElementsbyName() e existem muitos objetos com tags ou nomes iguais, coloca-se colchetes na frente do comando e especifica-se o elemento desejado.
+    */
+  </script>
+</body>
+</html>

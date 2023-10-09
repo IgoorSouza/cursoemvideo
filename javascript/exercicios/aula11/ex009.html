@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font: normal 15pt arial;
+    }
+
+    input {
+      font: normal 12pt Arial;
+    }
+  </style>
+</head>
+<body>
+  <h1>Qual sua nacionalidade?</h1>
+  <p>Digite o país onde você mora: </p>
+  <input type="text" name="nacionalidade" id="nacionalidade">
+  <input type="button" id="botao" value="Enviar" onclick="verif()">
+
+  <div id="res">
+
+  </div>
+
+  <script>
+    function verif() {
+      var nacionalidade = document.querySelector('input#nacionalidade')
+      var res = document.querySelector('div#res')
+      var pais = (nacionalidade.value).toLowerCase()
+
+      if (pais == 'brasil') {
+        res.innerHTML = '<p>Vivendo em Brasil</p>'
+        res.innerHTML += '<p>Você é brasileiro!</p>'
+      } 
+      else {
+        var pais = (nacionalidade.value)
+        res.innerHTML = `<p>Vivendo em ${pais} </p>`
+        res.innerHTML += '<p>Você é estrangeiro!</p>'
+      }
+    }
+  </script>
+</body>
+</html>

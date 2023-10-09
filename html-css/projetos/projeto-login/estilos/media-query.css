@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: linear-gradient(#5f2c82, #49a09d);
+  }
+
+  section#login {
+    position: absolute;
+    width: 80vw;
+    height: 310px;
+  }
+
+  div#imagem {
+    width: 30%;
+    height: 310px;
+    border-right: 1px solid rgba(0, 0, 0, 0.336);
+    background-repeat: no-repeat;
+  }
+
+  div#conteudo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: auto;
+    padding-left: 24.5vw;
+    width: 55vw;
+  }
+
+  div#conteudo h1 {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+  }
+
+  div.info {
+    width: 94.7%;
+    margin-bottom: 3px;
+  }
+
+  div.info input {
+    width: 90.9%;
+  }
+
+  div#formulario div {
+    margin-bottom: 5px;
+  }
+
+  div#formulario div#entrar {
+    padding: 0px 0px 0px 0.48vw;
+  }
+  
+  div#entrar input {
+    width: 54vw;
+  }
+
+  div#esqueci {
+    width: 52vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background-image: linear-gradient(#5f2c82, #49a09d);
+  }
+  
+  section#login {
+    width: 950px;
+    height: 350px;
+  }
+
+  div#imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+
+  div#conteudo h1 {
+    font-size: 2em;
+  }
+
+  div#conteudo p {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  div#formulario {
+    position: absolute;
+    margin-top: 15px;
+  }
+
+  div.info {
+    width: 92%;
+  }
+
+  div.info input {
+    width: 91.7%;
+  }
+
+  div#entrar input {
+    width: 457px;
+  }
+
+  div#esqueci {
+    width: 435px;
+  }
+}

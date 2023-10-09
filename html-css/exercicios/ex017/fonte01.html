@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes em CSS</title>
+  <style>
+    body{
+      font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+      /* 
+      Medidas Absolutas
+      cm, mm, in (polegadas), px, pt, pc
+
+      Medidas Relativas
+      em, ex, rem, vw, vh, %
+
+      Recomenda-se fortemente que sempre use px e em
+      16px = tamanho padrão
+      1 em = 16px 
+      */
+      font-size: 16px;
+      font-weight: normal; /* peso da fonte*/
+      /* lighter, normal, bold e bolder ou 100-900 */
+    }
+
+    h1{
+      /* shorthand font
+         font-style -> font-weight -> font-size -> font-family 
+         
+         font-family: 'Work Sans', sans-serif;
+         font-weight: bolder;
+         font-size: 3em;
+         font-style: italic;
+         */
+         font: italic bolder 3em 'Work Sans', sans-serif;
+    }
+
+    h2{
+      font: bold 2em 'Work Sans';
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Trabalhando com fontes</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit recusandae omnis odio similique consectetur incidunt, vel quidem ducimus a amet neque iste perspiciatis illo, repellat sapiente vero explicabo! Amet, quia! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, consequatur praesentium voluptates sint amet distinctio pariatur facilis culpa doloribus optio. Suscipit similique sint magni voluptates ipsam voluptatum recusandae maxime adipisci? lorem</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique voluptatum illum adipisci odio deleniti voluptates. Id hic cupiditate quibusdam, in odio vel fugit, praesentium laborum libero quo, commodi ipsa quasi!</p>
+  <h2>Subtítulo do exercício</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, quo! Laboriosam dicta, magni delectus minus ut odio ad quisquam similique dolores provident adipisci ducimus porro reprehenderit. Dolor magnam accusamus molestiae?</p>
+</body>
+</html>

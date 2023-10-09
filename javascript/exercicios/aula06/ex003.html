@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu primeiro programa...</title>
+  <style>
+    body {
+      background-color: rgb(105, 105, 173);
+      color: white;
+      font: normal 20pt Arial;
+    }
+
+    h1 {
+      color: rgb(255, 212,22);
+    }
+  </style>
+</head>
+<body>
+  <h1>Olá, mundo!</h1>
+  <p>Já me livrei da maldição!!</p>
+  
+  <script>
+   var n1 = Number(window.prompt('Digite um número: ')); //String
+   var n2 = Number(window.prompt('Digite outro número: ')); //String
+   var s = n1 + n2;
+   // (number + number) para adição;
+   // (string + string) para concatenação;
+   window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+
+   /*
+   Conversões de variáveis:
+
+    OBS.: "(s)" e "(n)" correspondem às variáveis.
+
+    Number.parseInt(n): converte um número para um número inteiro;
+
+    Number.parteFloat(n): converte um número para um número real;
+
+    Number(n): o próprio programa decide o tipo da variável de acordo com o valor recebido;
+
+    (n).toFixed(): limita as casas decimais de um número real;
+
+    (n).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}): converte um número para a moeda (nesse caso, R$) do país especificado (nesse caso, Brasil);
+
+    .replace('', ''): substitui caracteres por outros caracteres;
+
+    String(n) e (n).toString(): converte o conteúdo da variável para uma string;
+
+    * Outras anotações úteis: *
+
+    (s).length: não tem parênteses pois é um atributo, conta quantos caracteres uma string possui;
+
+    (s).toUpperCase(): converte todos os caracteres para maiúsculos;
+
+    (s).toLowerCase(): converte todos os caracteres para minúsculos;
+
+   */
+  </script>
+</body>
+</html>
